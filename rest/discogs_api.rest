@@ -1,0 +1,4 @@
+GET https://api.discogs.com/database/search?searchType=master&q=[DAT 022] Dillinja - Sovereign Melody
+User-Agent: "ColeApp/3.0" HTTP/1.1
+Content-Type: application/json
+Authorization: Discogs token=zbJiWsOvjCwIDAyDHxArGWgTCXkIgfMiYmmVfDBR

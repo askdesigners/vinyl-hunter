@@ -1,0 +1,17 @@
+{
+  "name": "enricher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "disconnect": "^1.2.2",
+    "node-id3": "^0.2.6",
+    "pg": "^8.9.0"
+  }
+}
