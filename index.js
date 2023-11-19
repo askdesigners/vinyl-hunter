@@ -30,6 +30,9 @@ class App {
     this.start = new Date();
   }
 
+  /**
+   * Fetches all tracks from a list of playlists and writes them to the audio dir
+   */
   async fetchPlaylists(playlists) {
     for (let index = 0; index < playlists.length; index++) {
       const pl = playlists[index];
@@ -59,6 +62,10 @@ class App {
     this.enrichFromQueue();
   }
 
+  /**
+   * Fetches items from the enrichment queue and makes API calls. 
+   * Also handles rate limiting and 500 errors
+   */
   async enrichFromQueue() {
     if (this.enrichmentQueueRunning === false) {
       this.enrichmentQueueRunning = true;
@@ -96,6 +103,9 @@ class App {
     }
   }
 
+  /**
+   * Fetches the enrichment data from discogs for all tracks in the Dir and writes it to json file
+   */
   async fetchDirEnrichments() {
     const start = new Date();
     const trackNames = this.files.readAudioDir(`../${this.songsDir}`);
@@ -131,6 +141,11 @@ class App {
     const end = new Date();
     console.log(`Enriched ${trackNames.length} tracks in ${(end - start) / 1000 / 60} mins`);
   }
+
+  /**
+   * Writes all the entrichment data from json files into ID# tags. 
+   * Untested and probably broken
+   */
 
   async writeTags() {
     console.log('Writing tags');
@@ -229,6 +244,6 @@ const newWave = [
   "PLL1NQSkQU5Ldq-L8OcLv-o0FhV95Ld3_0",
 ]
 
-
+// Instantiate App with an array of playlist ids, and watch the fun begin
 new App('ClassicTrance').fetchPlaylists(classicTrance);
 
