@@ -191,6 +191,22 @@ const techno = [
   "PLO1TSW_xG8o5o-yq32Dcwip3DV8DIrUMy"
 ]
 
+const synthWave = [
+  "PLbFwajYWEkFDQdTRiG-kLgAYWREOjbB-3",
+  "PLHQ0xKUMxXGv8Hed5TgzzCgT2YPIivJXs",
+  "PLMCly1sOjt62xNf-DXwDz7LPHSLSc4CTz",
+  "PLEelxuGt2Io5jGNnA44S9lRhclhz7po1U",
+  "PLktdtTNubKSofHsICrxW9KE9DeFPFYqoG",
+]
+
+const classicTrance = [
+  "PLZAVYHfEcqjFXC0sdcqIJlOKH-7TQnATO",
+  "PLZNs4L8BION0j49kCICe80Du7S1yPqmOU",
+  "PLp7Kxv95CAQxxXK54ni-U_p774UOXGxLv",
+  "PLS1ra2dnymSByzCfWE5VnDtBlWp0X9Aok",
+  "PLyTZSpg9tcGhlrwkFuOt69V5YbHU_0YL8"
+]
+
 const funk = [
   "PLBA986EF6C0FAA1D9",
   "PLFK9SMgFPIoCUt9SyJFywfuevkiCbnpkr",
@@ -213,14 +229,6 @@ const newWave = [
   "PLL1NQSkQU5Ldq-L8OcLv-o0FhV95Ld3_0",
 ]
 
-const synthWave = [
-  "PLbFwajYWEkFDQdTRiG-kLgAYWREOjbB-3",
-  "PLHQ0xKUMxXGv8Hed5TgzzCgT2YPIivJXs",
-  "PLMCly1sOjt62xNf-DXwDz7LPHSLSc4CTz",
-  "PLEelxuGt2Io5jGNnA44S9lRhclhz7po1U",
-  "PLktdtTNubKSofHsICrxW9KE9DeFPFYqoG",
-]
 
-new App('ClassicHouse').fetchPlaylists(classicHouse);
-
+new App('ClassicTrance').fetchPlaylists(classicTrance);
 
